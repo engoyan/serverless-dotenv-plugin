@@ -16,6 +16,7 @@ class ServerlessPlugin {
       "before:invoke:local:invoke": this.loadEnv.bind(this),
       "before:deploy:resources": this.loadEnv.bind(this),
       "before:deploy:functions": this.loadEnv.bind(this),
+      "aws:common:validate:validate": this.loadEnv.bind(this),
     }
   }
 
